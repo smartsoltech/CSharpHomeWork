@@ -1,0 +1,15 @@
+C:\Users\me\own projects\CSharpHomeWork\Task1_max_of_two_digits\obj\Debug\net6.0\Task1_max_of_two_digits.csproj.AssemblyReference.cache
+C:\Users\me\own projects\CSharpHomeWork\Task1_max_of_two_digits\obj\Debug\net6.0\Task1_max_of_two_digits.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\me\own projects\CSharpHomeWork\Task1_max_of_two_digits\obj\Debug\net6.0\Task1_max_of_two_digits.AssemblyInfoInputs.cache
+C:\Users\me\own projects\CSharpHomeWork\Task1_max_of_two_digits\obj\Debug\net6.0\Task1_max_of_two_digits.AssemblyInfo.cs
+C:\Users\me\own projects\CSharpHomeWork\Task1_max_of_two_digits\obj\Debug\net6.0\Task1_max_of_two_digits.csproj.CoreCompileInputs.cache
+C:\Users\me\own projects\CSharpHomeWork\Task1_max_of_two_digits\bin\Debug\net6.0\Task1_max_of_two_digits.exe
+C:\Users\me\own projects\CSharpHomeWork\Task1_max_of_two_digits\bin\Debug\net6.0\Task1_max_of_two_digits.deps.json
+C:\Users\me\own projects\CSharpHomeWork\Task1_max_of_two_digits\bin\Debug\net6.0\Task1_max_of_two_digits.runtimeconfig.json
+C:\Users\me\own projects\CSharpHomeWork\Task1_max_of_two_digits\bin\Debug\net6.0\Task1_max_of_two_digits.dll
+C:\Users\me\own projects\CSharpHomeWork\Task1_max_of_two_digits\bin\Debug\net6.0\Task1_max_of_two_digits.pdb
+C:\Users\me\own projects\CSharpHomeWork\Task1_max_of_two_digits\obj\Debug\net6.0\Task1_max_of_two_digits.dll
+C:\Users\me\own projects\CSharpHomeWork\Task1_max_of_two_digits\obj\Debug\net6.0\refint\Task1_max_of_two_digits.dll
+C:\Users\me\own projects\CSharpHomeWork\Task1_max_of_two_digits\obj\Debug\net6.0\Task1_max_of_two_digits.pdb
+C:\Users\me\own projects\CSharpHomeWork\Task1_max_of_two_digits\obj\Debug\net6.0\Task1_max_of_two_digits.genruntimeconfig.cache
+C:\Users\me\own projects\CSharpHomeWork\Task1_max_of_two_digits\obj\Debug\net6.0\ref\Task1_max_of_two_digits.dll
