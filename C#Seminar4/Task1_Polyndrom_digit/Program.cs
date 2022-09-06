@@ -13,20 +13,23 @@ void Polyndrom(int value)
     Console.WriteLine($"Длина введенного числа - {inputLength.Length} знаков");
     int temp = value;
     int rev = 0;
-    while (value>0)
+    while (temp>0)
     {
-        int dig = value % 10;
+        int dig = temp % 10;
+        //System.Console.WriteLine($"dig = {dig}"); Отладочный принт
         rev = rev * 10 + dig;
-        value  = value / 10;
+        //System.Console.WriteLine($"rev = {rev}"); Отладочный принт
+        temp  = temp / 10;
+        //System.Console.WriteLine($"temp = {temp}"); Отладочный принт
     }
     
-    if(temp == rev)
+    if(value == rev)
     {
-        System.Console.WriteLine($"Число {temp} - это палиндром!");
+        System.Console.WriteLine($"Число {value} - это палиндром!");
     }
     else
     {
-        System.Console.WriteLine($"Число {temp} - это не палиндром!");
+        System.Console.WriteLine($"Число {value} - это не палиндром!");
     }
 }
 Polyndrom(input);
