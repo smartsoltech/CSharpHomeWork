@@ -1,4 +1,4 @@
-﻿Console.Write("Enter a digit> ");
+﻿Console.Write("Enter a value> ");
 int value = int.Parse(Console.ReadLine() ?? "0");
 int i = 0;
 for (i=1; i<=value; i++)

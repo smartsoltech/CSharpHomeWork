@@ -1,6 +1,6 @@
 ﻿Console.Write("Enter 1st number> ");
 int numA = int.Parse(Console.ReadLine() ?? "0");
-Console.Write("Enter 2nd digit>>");
+Console.Write("Enter 2nd value>>");
 int numB = int.Parse(Console.ReadLine() ?? "0");
 
 if (numA < numB )

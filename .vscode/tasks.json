@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/Task1_max_of_two_digits/Task1_max_of_two_digits.csproj",
+                "${workspaceFolder}/Task1_max_of_two_values/Task1_max_of_two_values.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/Task1_max_of_two_digits/Task1_max_of_two_digits.csproj",
+                "${workspaceFolder}/Task1_max_of_two_values/Task1_max_of_two_values.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -33,7 +33,7 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/Task1_max_of_two_digits/Task1_max_of_two_digits.csproj"
+                "${workspaceFolder}/Task1_max_of_two_values/Task1_max_of_two_values.csproj"
             ],
             "problemMatcher": "$msCompile"
         }

@@ -7,8 +7,10 @@ int Prompt(string message)
 }
 
 //вызов фунции на ввод числа
-int digit = Prompt("Введите число > ");
-
+int value = Prompt("Введите число > ");
+System.Console.WriteLine(" ");
+System.Console.WriteLine($"Таблица 'Кубов' числа {value}:");
+//System.Console.WriteLine(" ");
 //функция вычисления кубов и вывода результата
 void main(int value)
 {
@@ -19,4 +21,4 @@ void main(int value)
 }
 
 //Вызов основной функции
-main(digit);
+main(value);

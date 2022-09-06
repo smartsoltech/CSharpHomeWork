@@ -6,19 +6,26 @@
 
 int input = Prompt("Введите число (5 символов)> ");
 
-void Polyndrom(int digit)
+void Polyndrom(int value)
 {
     //Получаем длину введенного числа (работа со строкой)
-    string inputLength = Convert.ToString(digit);
+    string inputLength = Convert.ToString(value);
     Console.WriteLine($"Длина введенного числа - {inputLength.Length} знаков");
-    int[] origin = new int[6];
-    if (inputLength.Length < 5 || inputLength.Length >5 )
+    int temp = value;
+    int rev = 0;
+    while (value>0)
     {
-       System.Console.WriteLine("Не верная длина числа");     
+        int dig = value % 10;
+        rev = rev * 10 + dig;
+        value  = value / 10;
     }
-    else 
-    {
-        if (digit )
-    }
+if(temp == rev)
+{
+    System.Console.WriteLine("Это палиндром!");
+}
+else
+{
+    System.Console.WriteLine("Это не палиндром!");
+}
 }
 Polyndrom(input);

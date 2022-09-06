@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/Task1_max_of_two_digits/bin/Debug/net6.0/Task1_max_of_two_digits.dll",
+            "program": "${workspaceFolder}/Task1_max_of_two_values/bin/Debug/net6.0/Task1_max_of_two_values.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/Task1_max_of_two_digits",
+            "cwd": "${workspaceFolder}/Task1_max_of_two_values",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "internalConsole",
             "stopAtEntry": false
