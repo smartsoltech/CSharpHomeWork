@@ -19,13 +19,14 @@ void Polyndrom(int value)
         rev = rev * 10 + dig;
         value  = value / 10;
     }
-if(temp == rev)
-{
-    System.Console.WriteLine("Это палиндром!");
-}
-else
-{
-    System.Console.WriteLine("Это не палиндром!");
-}
+    
+    if(temp == rev)
+    {
+        System.Console.WriteLine($"Число {temp} - это палиндром!");
+    }
+    else
+    {
+        System.Console.WriteLine($"Число {temp} - это не палиндром!");
+    }
 }
 Polyndrom(input);

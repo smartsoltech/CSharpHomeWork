@@ -9,15 +9,22 @@ int Prompt(string message)
 //вызов фунции на ввод числа
 int value = Prompt("Введите число > ");
 System.Console.WriteLine(" ");
-System.Console.WriteLine($"Таблица 'Кубов' числа {value}:");
 //System.Console.WriteLine(" ");
 //функция вычисления кубов и вывода результата
 void main(int value)
 {
-    for (int i=1; i<=value; i++)
-    {
-        System.Console.WriteLine($"{i} ^ 3 = {(long) Math.Pow(i, 3)}");
-    }
+      if (value <= 0 )
+        {   
+            System.Console.WriteLine($"Введенное Вами число {value} меньше равно 0. Расчет не возможен!");
+        }
+    else 
+        {
+            System.Console.WriteLine($"Таблица 'Кубов' числа {value}:");
+            for (int i=1; i<=value; i++)
+            {
+                System.Console.WriteLine($"{i} ^ 3 = {(long) Math.Pow(i, 3)}");
+            }
+        }
 }
 
 //Вызов основной функции
