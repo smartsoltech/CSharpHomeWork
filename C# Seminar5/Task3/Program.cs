@@ -1,24 +1,30 @@
-﻿int Prompt(string message)
+﻿using System.Linq;
+int Prompt(string message)
 {
     System.Console.WriteLine(message);
     return Convert.ToInt32(Console.ReadLine());
 }
-float[] GenerateArray(int size)
+double[] GenerateArray(int size)
 {
-    float[] numbers = new float[size];
+    double[] numbers = new double[size];
     System.Console.Write("[");
+    Random rnd = new Random();
     for (int i = 0; i < numbers.Length; i++)
     {
-        numbers[i] = new Random().Next(1.00, 999.99);
-        System.Console.Write($"{numbers[i]} ");
+        numbers[i] = Math.Round(rnd.NextDouble() * (100 - (-100)) + (-100), 2);
+
+        System.Console.Write($"{numbers[i]} | ");
     }
     System.Console.WriteLine("]");
     System.Console.WriteLine();
+    System.Console.WriteLine($"Минимальный элемент: {numbers.Min()}, Максимальный элемент: {numbers.Max()}, разница между ними: {Math.Round(numbers.Max() - numbers.Min(),2)}");
     return numbers;
 }
+
 int arrayLength = Prompt("Введите длину массива > ");
-float[] array = GenerateArray(arrayLength);
-for (int i=0; i<array.Length; i++)
-{
-    System.Console.WriteLine(array[i]);
-}
+double[] numbers = GenerateArray(arrayLength);
+
+
+
+
+
