@@ -10,14 +10,16 @@ int Prompt(string message)
 }
 
 int input = Prompt("Введите число > ");
-
-int tmp_len = input;
-int sum = 0;
-while (input < 0)
+System.Console.WriteLine($"Введенное число: {input}");
+double Main(int number)
 {
-    tmp_len = input / 10;
-    sum += tmp_len;
-    //return sum;
-    System.Console.WriteLine(sum);
-
+    int sum = 0;
+    while (number != 0)
+    {
+        sum += number % 10;
+        number = number/10;
+    }
+    return sum;
 }
+
+   Console.WriteLine("Сумма чисел равна " + Main(input));
