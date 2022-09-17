@@ -23,14 +23,15 @@ int[] GenerateArray(int size)
 int Main(int[] array)
 {
     int[] chetnoe = new int[array.Length];
-    int count = 0;
+    int sum = 0;
     for (int i = 0; i <= array.Length-1; i=i+2)
     {
             chetnoe[i] = array[i];
-            count++;
+            sum = sum+array[i];
             System.Console.WriteLine($"{chetnoe[i]} - Нечетная позиция!");
     }
-    return count;
+    return sum;
+    
 
 }
 
@@ -38,4 +39,4 @@ int ArrayLength = Prompt("Введите длину массива > ");
 int[] array = GenerateArray(ArrayLength);
 int result = Main(array);
 
-System.Console.WriteLine($" Количество элементов на нечетной позиции  - {result}");
+System.Console.WriteLine($" Cevvf элементов на нечетной позиции  - {result}");
