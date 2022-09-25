@@ -21,7 +21,6 @@ double[,] GenerateArray(int rowLength, int colLength)
         for (var j = 0; j < array.GetLength(1); j++)
         {
             array[i, j] = Math.Round(rnd.NextDouble() * (100 - (-100)) + (-100), 2);
-
         }
     }
     return array;
@@ -40,7 +39,6 @@ void Print2DArray(double[,] array)
     }
     System.Console.WriteLine();
 }
-
 int colCount = Prompt("Введите количество столбцов > ");
 int rowCount = Prompt("Введите количество строк> ");
 double[,] array = GenerateArray(colCount, rowCount);

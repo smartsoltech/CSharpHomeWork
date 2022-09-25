@@ -7,6 +7,7 @@ int Prompt(string message)
     return Convert.ToInt32(Console.ReadLine());
 }
 
+// Генерация массива рандомного размера
 double[,] GenerateArray()
 {
     var rnd = new Random();
@@ -16,14 +17,14 @@ double[,] GenerateArray()
         for (var j = 0; j < array.GetLength(1); j++)
         {
             array[i, j] = Math.Round(rnd.NextDouble() * (100 - (-100)) + (-100), 2);
-            //System.Console.WriteLine(array[i,j]);
         }
     }
     return array;
 }
+//Вывод массива на экран
 void Print2DArray(double[,] array)
 {
-    System.Console.WriteLine("2-мерный массив: ");
+    System.Console.WriteLine("Сгенерированный массив: ");
     for (int i = 0; i < array.GetLength(0); i++)
     {
         for (int j = 0; j < array.GetLength(1); j++)
@@ -35,27 +36,23 @@ void Print2DArray(double[,] array)
     System.Console.WriteLine();
 }
 
-bool PositionCheck(double[,] array, int colPos, int rowPos);
+//Проверка введенных координат элемента на наличие позиции в массиве
+bool PositionCheck(double[,] array, int colPos, int rowPos)
 {
-    if (colPos != array.GetLenght(0))
+    if (colPos < array.GetLength(0) && rowPos < array.GetLength(1))
     {
         System.Console.WriteLine($"Столбец {colPos} отсуствует");
-        return false;
+        return true;
     }
-    if (rowPos != array.GetLength(1))
-    {
-        System.Console.WriteLine($"Столбец {colPos} отсуствует");
-        return false;
-    }
-    return true;
-
+    return false;
 }
 
+//Вывод результата на экран
 void Result(bool status, double[,] array, int colPos, int rowPos)
 {
     if(status)
     {
-        System.Console.WriteLine(array[colPos, rowPos]);
+        System.Console.WriteLine($"Элемент с координатами {colPos}, {rowPos} имеет значение: {array[rowPos, colPos]}");
     }
     else System.Console.WriteLine("Нет такой позиции");
 }

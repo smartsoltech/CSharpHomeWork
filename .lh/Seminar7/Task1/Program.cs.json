@@ -1,0 +1,22 @@
+{
+    "sourceFile": "Seminar7/Task1/Program.cs",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1664085158478,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1664085169381,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-﻿/*\n+/*\n Задача 1. Задайте двумерный массив размером m×n, заполненный случайными вещественными числами.\n m = 3, n = 4.\n 0,5 7 -2 -0,2\n 1 -3,3 8 -9,9\n"
+                }
+            ],
+            "date": 1664085158478,
+            "name": "Commit-0",
+            "content": "/*\nЗадача 1. Задайте двумерный массив размером m×n, заполненный случайными вещественными числами.\nm = 3, n = 4.\n0,5 7 -2 -0,2\n1 -3,3 8 -9,9\n8 7,8 -7,1 9\n*/\n\nint Prompt(string message)\n{\n    System.Console.Write(message);\n    return Convert.ToInt32(Console.ReadLine());\n}\n\ndouble[,] GenerateArray(int rowLength, int colLength)\n{\n    var array = new double[rowLength, colLength];\n    var rnd = new Random();\n    for (var i = 0; i < array.GetLength(0); i++)\n    {\n        for (var j = 0; j < array.GetLength(1); j++)\n        {\n            array[i, j] = Math.Round(rnd.NextDouble() * (100 - (-100)) + (-100), 2);\n        }\n    }\n    return array;\n}\n\nvoid Print2DArray(double[,] array)\n{\n    System.Console.WriteLine(\"2-мерный массив: \");\n    for (int i = 0; i < array.GetLength(0); i++)\n    {\n        for (int j = 0; j < array.GetLength(1); j++)\n        {\n            System.Console.Write($\"{array[i, j]}\\t\");\n        }\n        System.Console.WriteLine();\n    }\n    System.Console.WriteLine();\n}\nint colCount = Prompt(\"Введите количество столбцов > \");\nint rowCount = Prompt(\"Введите количество строк> \");\ndouble[,] array = GenerateArray(colCount, rowCount);\nPrint2DArray(array);"
+        }
+    ]
+}
